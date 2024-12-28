@@ -1,0 +1,90 @@
+<!-- app/src/main/res/layout/item_tour.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/backgroundColor"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingEnd="8dp">
+
+                        <TextView
+                            android:id="@+id/tvTourName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Название тура"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textColor="@color/primaryColor" />
+
+                        <TextView
+                            android:id="@+id/tvCountry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Страна"
+                            android:textSize="16sp"
+                            android:textColor="@color/accentColor" />
+
+                        <TextView
+                            android:id="@+id/tvDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Описание"
+                            android:textSize="14sp"
+                            android:textColor="@color/textColor" />
+
+                        <TextView
+                            android:id="@+id/tvCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Стоимость"
+                            android:textSize="16sp"
+                            android:textColor="@color/textColor" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivTourImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/start_icon"
+                    android:contentDescription="Изображение тура"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_image_background"
+                    android:clipToOutline="true" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBuyTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Купить тур"
+            android:visibility="gone"
+            android:textColor="@color/primaryColor"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnCancelTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отказаться от тура"
+            android:visibility="gone"
+            android:textColor="@color/primaryColor"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp" />
+</LinearLayout>

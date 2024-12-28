@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eff1f4">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0c73fe"
+        android:title="Добавить Тур"
+        android:titleTextColor="#000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etTourName"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_edit_text"
+            android:paddingLeft="15dp"
+            android:hint="Название тура"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/etCountry"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_edit_text"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/etTourName"
+            android:layout_marginTop="16dp"
+            android:hint="Страна"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_edit_text"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/etCountry"
+            android:layout_marginTop="16dp"
+            android:hint="Описание"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/etCost"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_edit_text"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/etDescription"
+            android:layout_marginTop="16dp"
+            android:hint="Стоимость"
+            android:inputType="numberDecimal"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <Button
+            android:id="@+id/btnAddTour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCost"
+            android:layout_marginTop="16dp"
+            android:text="Добавить Тур"
+            android:layout_centerHorizontal="true"
+            android:textColor="#eff1f4"
+            android:background="@drawable/rounded_button"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+</LinearLayout>
